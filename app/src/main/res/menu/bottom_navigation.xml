@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuhome"
+        android:title="home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/menufav"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="favorite" />
+    <item
+        android:id="@+id/messagemod"
+        android:title="Message"
+        android:icon="@drawable/message"/>
+    <item
+        android:id="@+id/mydoc"
+        android:title="MyDoctor"
+        android:icon="@drawable/icondoctor"/>
+    <item
+        android:id="@+id/menuprofile"
+        android:title="Profile"
+        android:icon="@drawable/profile"/>
+
+
+</menu>

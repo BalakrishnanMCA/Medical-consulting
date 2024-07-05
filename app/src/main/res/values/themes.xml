@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MedicalCare" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#198EB6</item>
+        <item name="android:fontFamily">@font/salsa</item>
+        <item name="bottomNavigationStyle">@style/BottomNavigationIcon</item>
+    </style>
+
+    <style name="Theme.MedicalCare" parent="Base.Theme.MedicalCare"></style>
+
+    <style name="BottomNavigationIcon" parent="Widget.Design.BottomNavigationView">
+        <item name="android:background">@drawable/bottom_fragment_background</item>
+    </style>
+
+    <style name="TransparentAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="Theme.MedicalCare.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MedicalCare.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MedicalCare.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

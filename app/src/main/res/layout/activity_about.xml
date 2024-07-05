@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/formal"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/backactivity"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="About application"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:layout_marginEnd="40dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="        In today's fast-paced world, access to quality healthcare is more crucial than ever. Our medical consultation application represents a significant advancement in healthcare technology, aiming to bridge the gap between patients and healthcare professionals, making healthcare services more accessible, convenient, and efficient."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="        At its core, our application is designed to revolutionize the healthcare delivery model by offering a comprehensive range of features and services that cater to the diverse needs of users. Whether you\'re seeking a routine health checkup or in need of expert medical advice, our app provides a platform where users can connect with certified physicians and healthcare professionals seamlessly."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="            One of the key features of our application is the ability to schedule online consultations with licensed doctors from the comfort of your own home. Through real-time video calls, audio calls, and messaging functionalities, users can engage in personalized consultations with healthcare professionals, ensuring timely assistance and expert medical advice without the need for physical appointments."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="            Furthermore, our application goes beyond traditional healthcare services by offering personalized health reports generated based on consultation outcomes. These reports provide users with valuable insights into their health status, allowing them to track their progress and make informed decisions about their well-being."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="            Navigating the vast landscape of healthcare providers can be daunting, which is why our app incorporates an intuitive search feature that enables users to find doctors based on their expertise, specialization, or location. Whether you're looking for a primary care physician, a specialist in a particular field, or a healthcare provider in your vicinity, our app makes it easy to connect with the right professionals."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="            We understand that some healthcare needs may require in-person consultations, which is why our application allows users to share specific locations for doctor's clinics, facilitating seamless transitions between online and offline healthcare services as needed."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="            User-friendliness and accessibility are at the forefront of our application's design philosophy. With a user-friendly interface and intuitive navigation, our app caters to individuals of all backgrounds, promoting adoption among users and ensuring a positive user experience."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="            In summary, our medical consultation application represents a significant milestone towards creating a patient-focused healthcare system that embraces technology. By combining the convenience of online consultations, personalized health reports, and enhanced search capabilities, we provide a holistic solution for individuals seeking convenient and easily accessible healthcare services."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="            Join us on our mission to redefine healthcare delivery, empower patients, and create a future where healthcare services are accessible to all, anytime, anywhere."/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

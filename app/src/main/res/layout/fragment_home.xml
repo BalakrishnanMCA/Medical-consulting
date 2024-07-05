@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserModule.UserFragments.HomeFragment"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/homeprofile"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/profile" />
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="0.7"
+                            android:text="@string/name"
+                            android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:text="@string/common_category"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:rowCount="4">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/physcianviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/physciancard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/physician"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/physician"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/physcianicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+
+                                <ScrollView
+                                    android:id="@+id/physcianbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/physciantextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/physician_description"
+                                            android:textSize="10sp" />
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/skinviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/skincard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/skin"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="skin"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/skinicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+
+                                <ScrollView
+                                    android:id="@+id/skinbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/skintextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/skin_description"
+                                            android:textSize="10sp" />
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/orthoviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/orthocard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/bone"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/orthopedician"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/orthoicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+
+                                <ScrollView
+                                    android:id="@+id/orthobackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/orthotextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/ortho_description"
+                                            android:textSize="10sp" />
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/childviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/childcard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/child"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/childrens_care"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/childicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+
+                                <ScrollView
+                                    android:id="@+id/childbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/childtextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/child_description"
+                                            android:textSize="10sp" />
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/physiotherapistviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="2"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/physiotherapistcard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/physiciotherapist"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/physiotherapist"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/physiotherapisticon"
+
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+
+                                <ScrollView
+                                    android:id="@+id/physiobackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/physiotextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/physio_description"
+                                            android:textSize="10sp" />
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/deititionviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="2"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/deititioncard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/dietition"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/dietition"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/deititionicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+
+                                <ScrollView
+                                    android:id="@+id/deititionbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/deititiontextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_margin="5dp"
+                                            android:text="@string/deitition_description"
+                                            android:textSize="10sp" />
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/metalviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="3"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/metalcard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/mental"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/mental_wellness"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/mentalicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/mentalbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/mentaltextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/meltal_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/womensviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="3"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/womenscard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/women"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/women_s_health"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/womensicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/womenbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/womentextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/womens_health_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:text="@string/organ_health_category"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:rowCount="5">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/entviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/entcard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/ent"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="ENT"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/enticon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/entbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/enttextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/ent_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/eyeviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/eyecard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/eye"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/eyes"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/eyeicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/eyebackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/eyetextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/eye_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/boneviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/bonecard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/bone"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/orthopedician"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/boneicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/bonebackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/bonetextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/bone"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/teethviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/teethcard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/teeth"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/teeth"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/teethicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/teethbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/teethtextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/teeth_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/kidneyviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="2"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/kidneycard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/kidney"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/kidney_and_urinary_tract"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/kidneyicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/kidneybackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/kidneytextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/kidney_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/stomachviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="2"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/stomachcard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/stomach"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/stomach_and_digestive"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/stomachicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/stomachbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/stomachtextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/stomach_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/heartviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="3"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/heartcard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/heartdoc"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/heart"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/hearticon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/heartbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/hearttextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/heart_descrption"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/lungsviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="3"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/lungscard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/lungs"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/lungs"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/lungsicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/lungsbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/lungstextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/lungs_desciption"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/brainviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="4"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/braincard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/brain"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/brain"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/brainicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/brainbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/braintextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/brain_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:text="@string/chronic_and_long_term_care"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:rowCount="4">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/diabeticsviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/diabeticscard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/diabetics"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/diabetics"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/diabeticsicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/diabeticsbackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/diabeticstextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/diabetics_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fertilityviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/fertilitycard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/fertility"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/fertility_specialist"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/fertilityicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/fertilitybackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/fertilitytextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/fertility_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/neuroviewcard"
+                            android:layout_width="0dp"
+                            android:layout_height="160dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:id="@+id/neurocard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp"
+                                    android:background="@drawable/neuro"
+                                    android:gravity="bottom">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/white"
+                                            android:text="@string/neurologist"
+                                            android:textAlignment="center" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/neuroicon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="end"
+                                    android:layout_margin="5dp"
+                                    android:contentDescription="@string/info"
+                                    android:src="@drawable/ibut" />
+                                <ScrollView
+                                    android:id="@+id/neurobackLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/neurotextBack"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/neuro_description"
+                                            android:textSize="10sp"
+                                            android:layout_margin="5dp"
+                                            android:gravity="center"/>
+                                </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+
+        </LinearLayout>
+</ScrollView>

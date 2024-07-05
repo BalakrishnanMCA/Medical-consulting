@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Common Specialist"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="5dp"/>
+        <CheckBox
+            android:id="@+id/physcian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physcian"/>
+        <CheckBox
+            android:id="@+id/skin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skin"/>
+        <CheckBox
+            android:id="@+id/hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hair"/>
+        <CheckBox
+            android:id="@+id/child_specialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children's specialist"/>
+        <CheckBox
+            android:id="@+id/ortho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="orthopedician"/>
+        <CheckBox
+            android:id="@+id/diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dietition"/>
+        <CheckBox
+            android:id="@+id/physio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pysiotherapist"/>
+        <CheckBox
+            android:id="@+id/metal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mental wellness"/>
+        <CheckBox
+            android:id="@+id/womenhealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="women's health"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organ Specialist"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="5dp"/>
+        <CheckBox
+            android:id="@+id/ent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENT"/>
+        <CheckBox
+            android:id="@+id/eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyes"/>
+        <CheckBox
+            android:id="@+id/dentist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dentist"/>
+        <CheckBox
+            android:id="@+id/stomach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stomach"/>
+        <CheckBox
+            android:id="@+id/kidney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kidney"/>
+        <CheckBox
+            android:id="@+id/heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart"/>
+        <CheckBox
+            android:id="@+id/lungs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lungs"/>
+        <CheckBox
+            android:id="@+id/brain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brain"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chronic and Long term care"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="5dp"/>
+        <CheckBox
+            android:id="@+id/diabetics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diabetics"/>
+        <CheckBox
+            android:id="@+id/neuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neurologist"/>
+        <CheckBox
+            android:id="@+id/fertility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fertility specialist"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

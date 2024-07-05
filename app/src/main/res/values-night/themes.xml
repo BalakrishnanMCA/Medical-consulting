@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MedicalCare" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="android:fontFamily">@font/salsa</item>
+        <item name="colorPrimary">#801ACCF8</item>
+        <item name="bottomNavigationStyle">@style/BottomNavigationIcon</item>
+    </style>
+
+    <style name="BottomNavigationIcon" parent="Widget.Design.BottomNavigationView">
+        <item name="android:background">@drawable/bottom_fragment_background</item>
+    </style>
+
+</resources>
